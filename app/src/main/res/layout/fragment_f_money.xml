@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FMoney">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="MONEY"
+            android:textColor="@color/black"
+            android:textSize="40dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Masukan Uang"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <EditText
+            android:hint="Rp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:id="@+id/bilangan1"
+            android:layout_width="370dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlCompat"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hasil"
+            android:layout_marginLeft="11dp"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/hasil"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="11dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_marginLeft="11dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spin"
+                android:entries="@array/konversiuang"
+                android:layout_weight="1"
+                android:layout_width="120dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center" />
+
+            <Space
+                android:layout_marginTop="10dp"
+                android:layout_width="10dp"
+                android:layout_height="65dp"/>
+
+            <Button
+                android:id="@+id/moneybtn"
+                android:layout_width="120dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="CONVERSION"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
